@@ -249,4 +249,4 @@ var render_urls = function() {
 
 render_ideas();
 render_shares();
-redner_urls();
+render_urls();
