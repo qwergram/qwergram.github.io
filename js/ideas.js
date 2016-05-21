@@ -241,7 +241,7 @@ var UrlBox = React.createClass({
 
 
 var render_urls = function() {
-  ReactDom.render(
+  ReactDOM.render(
     <UrlBox/>,
     document.getElementById('links')
   );
