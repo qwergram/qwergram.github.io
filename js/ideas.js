@@ -116,6 +116,7 @@ var SharesBox = React.createClass({
       'title': 'loading...',
       'link': 'http://qwergram.github.com/',
       'short_description': 'Give me a sec...'
+      'updated_at': 'T',
     }]};
   },
   loadSharesFromServer: function() {
