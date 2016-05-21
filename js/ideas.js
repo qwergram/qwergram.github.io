@@ -175,7 +175,7 @@ var RepoBox = React.createClass({
       'title': 'Getting latest repositories...',
       'link': 'http://qwergram.github.com/',
       'short_description': 'Hold on...',
-      'updated_at': 'T',
+      'updated_at': 'T'
     }]};
   },
   loadReposFromServer: function() {
@@ -211,7 +211,7 @@ var RepoBox = React.createClass({
                   </div>
                   <div className="meta">
                     <time className="published" datetime={idea['updated_at']}>
-                      {idea['updated_at'].split('T')[0]}
+                      
                     </time>
                     <a href="#me" className="author">
                       <span className="name">
