@@ -124,7 +124,8 @@ var SharesBox = React.createClass({
       dataType: "json",
       cache: false,
       success: function(data) {
-        this.setState({data: data['results']});
+        console.log(data);
+        this.setState({data: data});
       }.bind(this),
       error: function(xhr, status, err) {
         console.log("oops!", xhr, status, err);
