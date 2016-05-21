@@ -222,13 +222,14 @@ var RepoBox = React.createClass({
                     </a>
                   </div>
                 </header>
-                <p>{idea['description']}</p>
+                <h5>{idea['description']}</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <footer>
                   <ul className="actions">
                     <li><a href={idea['html_url']} className="button big">View the Repo</a></li>
                   </ul>
                   <ul className="stats">
-                    <li><a href="#">General</a></li>
+                    <li><a href="#">Repo</a></li>
                   </ul>
                 </footer>
               </article>
@@ -254,7 +255,7 @@ var UrlBox = React.createClass({
   render: function() {
     return (
       <ul>
-        <li><a href="#" onClick={this.renderHome}>Home</a></li>
+        <li><a href="#" onClick={this.renderHome}>Ideas</a></li>
         <li><a href="#repos" onClick={this.renderRepos}>Repos</a></li>
       </ul>
     );
