@@ -230,5 +230,6 @@ var render_repos = function() {
 };
 
 
-render_ideas();
-render_shares();
+// render_ideas();
+// render_shares();
+render_repos
