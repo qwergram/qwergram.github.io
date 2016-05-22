@@ -184,6 +184,7 @@ var RepoBox = React.createClass({
       url: url,
       cache: false,
       success: function(data) {
+        console.log(data);
         this.setState({markdown: data});
       }.bind(this),
       error: function(xhr, status, err) {
