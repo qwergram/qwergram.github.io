@@ -188,7 +188,7 @@ var RepoBox = React.createClass({
         return (data)
       }.done(function() {
         return ("done returned this")
-      });
+      })
       // error: function(xhr, status, err) {
       //   console.log("oops!", xhr, status, err)
       // }.bind(this),
