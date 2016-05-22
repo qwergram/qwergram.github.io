@@ -234,7 +234,7 @@ var RepoBox = React.createClass({
       <div>
         {
           this.state.data.map(function(idea) {
-            tmp_url = "https://github.com/" + idea['full_name'] + "/blob/master/README.md";
+            idea['readme'] = "https://github.com/" + idea['full_name'] + "/blob/master/README.md";
             return (
               <article className="post">
                 <header>
@@ -257,7 +257,7 @@ var RepoBox = React.createClass({
                 <footer>
                   <ul className="actions">
                     <li><a href={idea['html_url']} className="button big">View the Repo</a></li>
-                    <li><a href={tmp_url} className="button big">View the Read Me</a></li>
+                    <li><a href={idea['readme']} className="button big">View the Read Me</a></li>
                   </ul>
                   <ul className="stats">
                     <li>Repo</li>
