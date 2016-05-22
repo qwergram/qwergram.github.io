@@ -180,17 +180,31 @@ var RepoBox = React.createClass({
     }]};
   },
   loadReadmeFromGithubServer: function(url) {
-    $.ajax({
+    var readme = $.ajax({
       url: url,
       cache: false,
       success: function(data) {
         console.log(data);
-        this.setState({markdown: data});
-      }.bind(this),
-      error: function(xhr, status, err) {
-        console.log("oops!", xhr, status, err)
-      }.bind(this),
+        return (data)
+      }.done(function() {
+        return ("done returned this")
+      });
+      // error: function(xhr, status, err) {
+      //   console.log("oops!", xhr, status, err)
+      // }.bind(this),
     });
+    return readme;
+    // $.ajax({
+    //   url: url,
+    //   cache: false,
+    //   success: function(data) {
+    //     console.log(data);
+    //     this.setState({markdown: data});
+    //   }.bind(this),
+    //   error: function(xhr, status, err) {
+    //     console.log("oops!", xhr, status, err)
+    //   }.bind(this),
+    // });
   },
   loadReposFromServer: function() {
     $.ajax({
@@ -199,8 +213,8 @@ var RepoBox = React.createClass({
       cache: false,
       success: function(data) {
         // this.setState({data: data});
-        this.loadReadmeFromGithubServer(data[0]['readme']);
-        console.log(this.state.markdown);
+        // this.loadReadmeFromGithubServer(data[0]['readme']);
+        // console.log(this.state.markdown);
         // data[0]['readme'] = this.loadReadmeFromGithubServer(data[0]['readme']);
         this.setState({data: data});
       }.bind(this),
