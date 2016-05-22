@@ -179,18 +179,12 @@ var RepoBox = React.createClass({
       'full_name': '../..'
     }]};
   },
-  setReadmeFromGithubServer: function(markdown) {
-    data = this.state.data;
-    data[0]['readme'] = markdown;
-    console.log(data[0])
-    this.setState({data: data});
-  },
   loadReadmeFromGithubServer: function(url) {
     $.ajax({
       url: url,
       cache: false,
       success: function(data) {
-        this.setReadmeFromGithubServer(data);
+        this.setState({markdown: data});
       }.bind(this),
       error: function(xhr, status, err) {
         console.log("oops!", xhr, status, err)
@@ -203,10 +197,11 @@ var RepoBox = React.createClass({
       dataType: "json",
       cache: false,
       success: function(data) {
-        this.setState({data: data});
-        this.loadReadmeFromGithubServer(data[0]['readme']);
-        // data[0]['readme'] = this.loadReadmeFromGithubServer(data[0]['readme']);
         // this.setState({data: data});
+        this.loadReadmeFromGithubServer(data[0]['readme']);
+        console.log(this.state.markdown);
+        // data[0]['readme'] = this.loadReadmeFromGithubServer(data[0]['readme']);
+        this.setState({data: data});
       }.bind(this),
       error: function(xhr, status, err) {
         console.log("oops!", xhr, status, err);
