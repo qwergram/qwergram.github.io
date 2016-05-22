@@ -213,7 +213,7 @@ var RepoBox = React.createClass({
       cache: false,
       success: function(data) {
         // this.setState({data: data});
-        // this.loadReadmeFromGithubServer(data[0]['readme']);
+        console.log(this.loadReadmeFromGithubServer(data[0]['readme']));
         // console.log(this.state.markdown);
         // data[0]['readme'] = this.loadReadmeFromGithubServer(data[0]['readme']);
         this.setState({data: data});
