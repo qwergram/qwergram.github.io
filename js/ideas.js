@@ -187,6 +187,7 @@ var RepoBox = React.createClass({
       success: function(data) {
         readme = data;
         console.log(data);
+        console.log(url);
       }.bind(this),
       error: function(xhr, status, err) {
         console.log("oops!", xhr, status, err)
