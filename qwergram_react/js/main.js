@@ -28,6 +28,6 @@ var ArticlesBox = React.createClass({
 });
 
 ReactDOM.render(
-  <ArticlesBox url="http://ec2-54-187-86-84.us-west-2.compute.amazonaws.com/api/v1/ideas/?format=json" pollInterval={2000} />,
+  <ArticlesBox url="http://40.78.69.181:8080/api/v1/ideas/?format=json" pollInterval={2000} />,
   document.getElementById('content')
 )
