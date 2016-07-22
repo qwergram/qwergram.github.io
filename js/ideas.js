@@ -1,10 +1,10 @@
 // main.js
 
 var api_endpoints = {
-  "ideas": "http://ec2-54-187-86-84.us-west-2.compute.amazonaws.com/api/v1/ideas/?format=json",
-  "articles": "http://ec2-54-187-86-84.us-west-2.compute.amazonaws.com/api/v1/articles/?format=json",
-  "shares": "http://ec2-54-187-86-84.us-west-2.compute.amazonaws.com/api/v1/shares/?format=json",
-  "repos": "http://ec2-54-187-86-84.us-west-2.compute.amazonaws.com/api/v1/repos/?format=json",
+  "ideas": "http://40.78.69.181:8080/api/v1/ideas/?format=json",
+  "articles": "http://40.78.69.181:8080/api/v1/articles/?format=json",
+  "shares": "http://40.78.69.181:8080/api/v1/shares/?format=json",
+  "repos": "http://40.78.69.181:8080/api/v1/repos/?format=json",
 }
 
 var IdeasBox = React.createClass({
