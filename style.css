@@ -95,13 +95,18 @@
         
         #clock, #greeting {
             color: rgb(161, 161, 161);
-            font-weight: 300;
+            /*font-weight: 100;*/
             font-size: 40pt;
             display: inline;
             text-align: center;
             padding: 20px 40px 40px 40px;
             transition: width .1s ease;
             -webkit-transition: width .1s ease;
+        }
+
+        #greeting span {
+            text-decoration: dashed;
+
         }
         
         #date {

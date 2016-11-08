@@ -134,9 +134,9 @@ const randomGreeter = function() {
         "How are you,"
     ];
     const name = [
-        "Norton",
-        "Mr. Pengra",
-        "Norton Pengra",
+        "<span>Norton</span>",
+        "<span>Mr. Pengra</span>",
+        "<span>Norton Pengra</span>",
     ];
     const greeting = choices[Math.floor(Math.random() * choices.length)] + ' ' + name[Math.floor(Math.random() * name.length)];
     // document.getElementById('greeting').innerHtml = greeting;
