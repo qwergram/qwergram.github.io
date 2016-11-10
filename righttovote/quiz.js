@@ -1,8 +1,6 @@
 
 const runquiz = (questions, index) => {
     if (index >= questions.length) {
-        console.log(index);
-        alert(index);
         location.href = '/righttovote/2.html'; 
     }
     const question = questions[index];
