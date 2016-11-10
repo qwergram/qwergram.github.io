@@ -48,11 +48,7 @@ function search(query=null) {
     }
 }
 
-$(document).bind('keydown', function (e) {
-    if (e.which == 16) {
-        document.getElementById("searchbar").focus();
-    }
-});
+document.getElementById("searchbar").focus();
 
 document.getElementById("searchbar")
     .addEventListener("keyup", function (event) {
