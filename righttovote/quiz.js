@@ -82,8 +82,8 @@ const verify = (answer, nextIndex) => {
 }
 
 const questions = [
-    // { "q": "What is the full name of first American President?", "t": "str", "a": "George Washington" },
-    // { "q": "How many states does the United States have?", "t": "int", "a": 50 },
+    { "q": "What is the full name of first American President?", "t": "str", "a": "George Washington" },
+    { "q": "How many states does the United States have?", "t": "int", "a": 50 },
     { "q": "What are the two major parties in the United States?", "t": "cmc", "c": ["The Republican Party", "The Democratic Party", "The Green Party", "The Libertarian Party"], "a": [0, 1] },
     { "q": "Which President was the first and last to use nuclear weapons?", "t": "rmc", "c": ["Winston Churchill", "Harry Truman", "George H. Bush", "Franklin Roosevelt"], "a": 1 },
 ];
