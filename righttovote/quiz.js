@@ -1,5 +1,8 @@
 
 const runquiz = (questions, index) => {
+    if (index >= questions.length) {
+        location.href = '/righttovote/2.html'; 
+    }
     const question = questions[index];
     document.getElementById('question').innerText = question.q;
     const choices = document.getElementById('choices')
