@@ -1,13 +1,16 @@
 
 const runquiz = (questions, index) => {
     if (index >= questions.length) {
+        console.log(index);
+        alert(index);
         location.href = '/righttovote/2.html'; 
     }
     const question = questions[index];
     document.getElementById('question').innerText = question.q;
     const choices = document.getElementById('choices')
     if (question.t === 'str' || question.t == 'int') {
-        const verify = "verify('" + question.a + "', " + index + 1 + ")";
+        index++;
+        const verify = "verify('" + question.a + "', " + index + ")";
         const formType = question.t === 'str' ? 'text' : 'number';
         choices.innerHTML = '<input type="' + formType + '" id="lookhere" placeholder="Your answer here" class="form-control"></input><br/><button class="btn btn-primary" id="submit" onclick="' + verify + '">Submit</button>';
         document.getElementById("lookhere")
@@ -23,14 +26,16 @@ const runquiz = (questions, index) => {
             const choice = question.c[i];
             choiceHtml += '<div class="choice"><input type="checkbox"  id="' + i.toString() + '">' + choice + '</div>'
         }
-        choices.innerHTML = choiceHtml + '<button id="submit" onclick="verifyCmc([' + question.a + '], ' + (index + 1) + ')">Submit</button>';
+        index++;
+        choices.innerHTML = choiceHtml + '<button id="submit" class="btn btn-primary" onclick="verifyCmc([' + question.a + '], ' + (index) + ')">Submit</button>';
     } else if (question.t === 'rmc') {
         let choiceHtml = '';
         for (const i in question.c) {
             const choice = question.c[i];
             choiceHtml += '<div class="choice"><input type="radio" name="selection" id="' + i.toString() + '">' + choice + '</div>'
         }
-        choices.innerHTML = choiceHtml + '<button id="submit" onclick="verifyRmc([' + question.a + '], ' + (index + 1) + ')">Submit</button>';
+        index++;
+        choices.innerHTML = choiceHtml + '<button id="submit" class="btn btn-primary" onclick="verifyRmc([' + question.a + '], ' + (index) + ')">Submit</button>';
     }
     
 }
