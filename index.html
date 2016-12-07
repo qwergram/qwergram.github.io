@@ -9,87 +9,96 @@
 </head>
 
 <body>
-    <div id="stripe">
-        <a href="/me.html"><h1 id="greeting">Hello <span>Norton</span></h1></a><br/>
-        <h1 id="clock" class="card"></h1>
-        <br/>
-        <span id="date"></span>
+    <div class="main">
+        <div id="stripe">
+            <a href="/me.html">
+                <h1 id="greeting">Hello <span>Norton</span></h1>
+            </a><br/>
+            <h1 id="clock" class="card"></h1>
+            <br/>
+            <span id="date"></span>
+        </div>
+
+        <div id="searchbar-container">
+            <input type="search" placeholder="-a -m -w -y" id="searchbar" onsubmit="search()" autocomplete="off" autocorrect="off" autocapitalize="off"
+                spellcheck="false" title="press TAB to focus" />
+        </div>
+
+        <div id="cards-holder">
+            <div id="col1" class="cardcolumn">
+                <li>
+                    <img class="icon" src="https://d34qjjv1pobszf.cloudfront.net/kangaroo/public/favicon.png">
+                    <a href="https://bank.simple.com/signin">Simple</a>
+                </li>
+                <li>
+                    <img class="icon" src="https://assets.aspiration.com/images/favicon.ico">
+                    <a href="https://my.aspiration.com/auth/login/">Aspiration</a>
+                </li>
+                <li>
+                    <img class="icon" src="https://ssl.gstatic.com/bt/C3341AA7A1A076756462EE2E5CD71C11/ic_product_inbox_16dp_r2_2x.png">
+                    <a href="https://inbox.google.com">Email</a>
+                    <li>
+                        <img class="icon" src="https://s.ytimg.com/yts/img/favicon-vflz7uhzw.ico">
+                        <a href="https://youtube.com">Youtube</a>
+                    </li>
+                    <li>
+                        <img class="icon" src="https://www.google.com/images/branding/product/ico/googleg_lodp.ico">
+                        <a href="https://www.google.com">Google</a>
+                    </li>
+            </div>
+            <div id="col2" class="cardcolumn">
+                <li>
+                    <img class="icon" src="https://www.messenger.com/images/messengerdotcom/favicon/favicon.ico">
+                    <a href="https://www.facebook.com">Facebook</a>
+                </li>
+                <li>
+                    <img class="icon" src="https://github.com/apple-touch-icon.png">
+                    <a href="https://github.com/">Github</a>
+                </li>
+                <li>
+                    <img class="icon" src="https://s.4cdn.org/image/favicon.ico">
+                    <a href="http://boards.4chan.org/wg/catalog">/wg/</a>
+                </li>
+                <li>
+                    <img class="icon" src='https://a-v2.sndcdn.com/assets/images/sc-icons/favicon-2cadd14b.ico'>
+                    <a href="https://soundcloud.com/">SoundCloud</a>
+                </li>
+                <li>
+                    <img class="icon" src="https://www.bungie.net/common/destiny_content/icons/icon_maa4da5e99c58e51fc052997ca6e240cf.png">
+                    <a href="https://www.bungie.net/en/Stats/Medals/1/4611686018454243707/2305843009345464609?mode=crucible">Crucible</a>
+                </li>
+            </div>
+
+
+            <div id="other" class="cardcolumn">
+                <li>
+                    <img class="icon" src="https://cdn0.iconfinder.com/data/icons/healthcare/512/thermometer.png">
+                    <a href="https://www.google.com/#q=weather" id="temp_curr">it's ??? out</a>
+                </li>
+                <li>
+                    <img class="icon" src="http://www.peters.com/wp-content/uploads/2015/11/Cloud-Services-icon.png">
+                    <a href="https://www.google.com/#q=weather" id="description">probly okay</a>
+                </li>
+                <li>
+                    <img class="icon" src="https://www.deusex.com/favicon.png">
+                    <a href="https://www.google.com/#q=weather" id="badness">weather here</a>
+                </li>
+                <hr/>
+                <li>
+                    <img class="icon" src="/prof.jpg">
+                    <a href="/me.html">About Me</a>
+                </li>
+                <li>
+                    <img class="icon" src= "http://68.media.tumblr.com/avatar_fb1050b74656_128.png">
+                    <a href="http://oliver-collins.tumblr.com/">Tumblr</a>
+                </li>
+            </div>
+        </div>
     </div>
-
-    <div id="searchbar-container">
-        <input type="search" placeholder="-a -m -w -y" id="searchbar" onsubmit="search()" autocomplete="off" autocorrect="off" autocapitalize="off"
-            spellcheck="false" title="press TAB to focus" />
-    </div>
-
-    <div id="cards-holder">
-        <div id="col1" class="cardcolumn">
-            <li>
-                <img class="icon" src="https://d34qjjv1pobszf.cloudfront.net/kangaroo/public/favicon.png">
-                <a href="https://bank.simple.com/signin">Simple</a>
-            </li>
-            <li>
-                <img class="icon" src="https://assets.aspiration.com/images/favicon.ico">
-                <a href="https://my.aspiration.com/auth/login/">Aspiration</a>
-            </li>
-            <li>
-                <img class="icon" src="https://ssl.gstatic.com/bt/C3341AA7A1A076756462EE2E5CD71C11/ic_product_inbox_16dp_r2_2x.png">
-                <a href="https://inbox.google.com">Email</a>
-            <li>
-                <img class="icon" src="https://s.ytimg.com/yts/img/favicon-vflz7uhzw.ico">
-                <a href="https://youtube.com">Youtube</a>
-            </li>
-            <li>
-                <img class="icon" src="https://www.google.com/images/branding/product/ico/googleg_lodp.ico">
-                <a href="https://www.google.com">Google</a>
-            </li>
-        </div>
-        <div id="col2" class="cardcolumn">
-            <li>
-                <img class="icon" src="https://www.messenger.com/images/messengerdotcom/favicon/favicon.ico">
-                <a href="https://www.facebook.com">Facebook</a>
-            </li>
-            <li>
-                <img class="icon" src="https://github.com/apple-touch-icon.png">
-                <a href="https://github.com/">Github</a>
-            </li>
-            <li>
-                <img class="icon" src="https://s.4cdn.org/image/favicon.ico">
-                <a href="http://boards.4chan.org/wg/catalog">/wg/</a>
-            </li>
-            <li>
-                <img class="icon" src='https://a-v2.sndcdn.com/assets/images/sc-icons/favicon-2cadd14b.ico'>
-                <a href="https://soundcloud.com/">SoundCloud</a>
-            </li>
-            <li>
-                <img class="icon" src="https://www.bungie.net/common/destiny_content/icons/icon_maa4da5e99c58e51fc052997ca6e240cf.png"> 
-                <a href="https://www.bungie.net/en/Stats/Medals/1/4611686018454243707/2305843009345464609?mode=crucible">Crucible</a>
-            </li>
-        </div>
-
-
-        <div id="other" class="cardcolumn">
-            <li>
-                <img class="icon" src="https://cdn0.iconfinder.com/data/icons/healthcare/512/thermometer.png">
-                <a href="https://www.google.com/#q=weather" id="temp_curr">it's ??? out</a>
-            </li>
-            <li>
-                <img class="icon" src="http://www.peters.com/wp-content/uploads/2015/11/Cloud-Services-icon.png">
-                <a href="https://www.google.com/#q=weather" id="description">probly okay</a>
-            </li>
-            <li>
-                <img class="icon" src="https://www.deusex.com/favicon.png">
-                <a href="https://www.google.com/#q=weather" id="badness">weather here</a>
-            </li>
-            <hr/>
-            <li>
-                <img class="icon" src="/prof.jpg">
-                <a href="/me.html">About Me</a>
-            </li>
-            <li>
-                <a href="/blog.html">Blog</a>
-            </li>
-        </div>
+    <div class="icons">
+        test
     </div>
 </body>
 <script src="script.js"></script>
+
 </html>
