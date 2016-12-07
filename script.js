@@ -44,7 +44,7 @@ function search(query=null) {
             window.location = "http://www.wolframalpha.com/input/?i=" + query;
             break;
         default:
-            window.location = "https://www.google.com/search?q=" + query;
+            window.location = "https://www.google.com/search?q=" + original;
     }
 }
 
@@ -95,9 +95,9 @@ function insertWeatherInfo() {
     var disgusting = (weatherCode > 500 && weatherCode < 800);
     if (disgusting || Number(temp_low) < 30 || Number(temp_high) > 95
         || humidity > 75) {
-        document.getElementById("badness").innerHTML = ("disgusting");
+        document.getElementById("badness").innerHTML = ("it's alright");
     } else {
-        document.getElementById("badness").innerHTML = ("not bad");
+        document.getElementById("badness").innerHTML = ("it's great");
     }
 }
 

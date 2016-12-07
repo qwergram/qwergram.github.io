@@ -200,3 +200,12 @@
     color: #bada55;
     padding-top: 5px;
 }
+
+.quoteoftheday {
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: #bada55;
+    position: fixed;
+    text-align: center;
+}
