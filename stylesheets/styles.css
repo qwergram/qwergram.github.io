@@ -272,3 +272,12 @@ footer {
 .hidden {
   display: none; 
 }
+
+.links {
+  height: 30px;
+}
+
+.links img {
+  width: 20px;
+  height: 20px;
+}
